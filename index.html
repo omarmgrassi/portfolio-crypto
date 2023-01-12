@@ -9,27 +9,29 @@
     <title>Netbook Portfolio</title>
 </head>
 <body>
+    
     <header class="header">
-
-        <div class="header__nav">
-            <img src="./img/logo.svg" alt="This is a logo for the company named Netbook">
-            <nav>
+        <div class="container header__container">
+            <img src="./img/logo.svg" alt="This is a logo for the company named Netbook" width="145" height="35">
+            <nav class="header__nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active" >Home</a></li>
                     <li><a href="#">Community</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Events#</a></li>
                 </ul>
             </nav>
+            <div class="header__actions">
+                <form class="header__search" action="">
+                    <img src="./img/ico-search.svg" alt="Magnify glass icon for search" width="16px" height="16px">
+                    <input type="search" aria-label="search" placeholder="Search here..">
+                </form>
+                
+                <a href="/login" class="btn">Log in</a>
+            </div>
         </div>
-
-        <div>
-            <input type="search">
-            <a href="/login">Log in</a>
-        </div>
-        
-
     </header>
+
     <main>
         <section class="hero"></section>
         <div class="clients"></div>
